@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: absolute;
+    padding: 10px;
+    gap: 55px;
+    display: flex;
+    margin-top: 10px;
+    position: fixed;
+    z-index: 100;
+}
+
+.navArea {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    position: relative;
+    right: 77px;
+    font-weight: 500;
+    color: #ffffffdb;
+}
+
+.nav-link.active {
+    color: #413636bb;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        gap: 25px;
+        margin-top: 1px;
+    }
+
+    .navArea {
+        font-size: 1rem;
+        right: 17px;
+        font-weight: 400;
+    }
+
+    .nav-link.active {
+        color: #fff;
+    }
+}

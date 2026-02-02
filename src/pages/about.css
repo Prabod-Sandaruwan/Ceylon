@@ -1,0 +1,99 @@
+.about-head {
+    background-image: url('../assets/aboutus.webp');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.about-title {
+    font-weight: bold;
+    font-size: 98px;
+    color: #ffffffc3;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.622);
+}
+
+.about-main-description {
+    color: #fffffff0;
+    font-size: 17px;
+    text-align: center;
+}
+
+.about-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-middle {
+    width: 100vw;
+    height: auto;
+    padding: 30px;
+    background-color: #000000;
+}
+
+.about-middle-title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.about-middle-description {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.about-middle-title,
+.about-middle-description {
+    text-align: center;
+    color: #ffffff;
+}
+
+.horizontal-line {
+    background: linear-gradient(90deg, #000000, #088395, #000000);
+    width: 50%;
+    height: 1px;
+    margin: 15px auto;
+}
+
+.about-card-details {
+    color: white
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-weight: bold;
+        font-size: 4rem;
+        color: #ffffffea;
+        -webkit-text-stroke: 0px black;
+    }
+
+    .about-main-description {
+        color: #ffffff;
+        font-size: 1rem;
+    }
+
+    .about-head {
+        padding-bottom: 100px;
+    }
+
+    .about-middle {
+        width: 100vw;
+        height: auto;
+        padding: 30px;
+        background-color: #000000;
+    }
+
+    .about-middle-title {
+        font-size: 2rem;
+    }
+
+    .about-middle-description {
+        font-size: 1rem;
+    }
+
+    .horizontal-line {
+        width: 80%;
+    }
+}

@@ -1,0 +1,202 @@
+ .destonation-heead {
+     height: 100vh;
+     background-size: cover;
+     width: 100vw;
+     position: relative;
+ }
+
+ .des-title {
+     font-size: 95px;
+     font-weight: 700;
+     font-family: "Playfair Display", serif;
+     line-height: 1;
+ }
+
+ .des-type {
+     font-size: 17px;
+     font-family: "Playfair Display", serif;
+ }
+
+ .des-type::before {
+     content: "";
+     display: inline-block;
+     height: 2px;
+     border-radius: 15px;
+     width: 50px;
+     background-color: rgb(212, 175, 55);
+     vertical-align: middle;
+     margin: 0px 10px 0px 10px;
+ }
+
+ .des-data-area {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     height: 35vh;
+     padding-left: 75px;
+     color: white;
+ }
+
+ .des-description-area {
+     height: 45vh;
+     margin-left: 60px;
+     position: relative;
+     width: 50%;
+ }
+
+ .des-description {
+
+     margin-top: 40px;
+     background-color: rgba(38, 38, 38, 0.163);
+     backdrop-filter: blur(10px);
+     min-height: 45vh;
+     border: 1px solid rgba(255, 255, 255, 0.284);
+     border-radius: 25px;
+     padding: 20px;
+     overflow: hidden;
+     color: rgb(255, 255, 255, 0.6);
+     text-align: justify;
+ }
+
+ .des-description span {
+     color: rgb(212, 175, 55);
+     font-weight: 500;
+     font-size: 14px;
+     padding-left: 10px;
+ }
+
+ .des-description::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 50%;
+     height: 2px;
+     background-color: rgb(212, 175, 55);
+     border-radius: 2px;
+     transition: all 0.5s ease;
+ }
+
+ .des-description:hover::before {
+     width: 100%;
+ }
+
+ .des-button-area {
+     min-height: 17vh;
+     display: flex;
+     justify-content: space-between;
+     position: absolute;
+     width: 100vw;
+     z-index: 10;
+ }
+
+ .next {
+     display: flex;
+     writing-mode: vertical-lr;
+     transform: rotate(180deg);
+     gap: 15px;
+     color: rgba(255, 255, 255, 0.4);
+     cursor: pointer;
+     margin-left: 10px;
+ }
+
+ .previous {
+     display: flex;
+     writing-mode: vertical-lr;
+     transform: rotate(180deg);
+     gap: 15px;
+     margin-right: 25px;
+     color: rgba(255, 255, 255, 0.4);
+     cursor: pointer;
+ }
+
+ .icon svg {
+     color: rgb(212, 175, 55);
+     width: 24px;
+     height: 24px;
+ }
+
+ .gallery {
+     width: 100vw;
+     height: auto;
+     background-color: black;
+     font-family: "Playfair Display", serif;
+     text-align: center;
+     padding-top: 30px;
+     padding-bottom: 30px;
+ }
+
+ .gallery-title {
+     color: rgb(212, 175, 55);
+     font-size: 30px;
+     font-weight: 700;
+ }
+
+ .gallery-description {
+     color: white;
+     font-size: 17px;
+     font-weight: lighter;
+ }
+.gallery-images {
+    column-count: 4;
+    padding-right: 30px;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.gallery-images img {
+    width: 100%;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    opacity: 85%;
+    border: 1px solid rgba(197, 204, 2, 0.579);
+}
+ @media (max-width: 768px) {
+     .des-title {
+         font-size: 3rem;
+         width: 100%;
+     }
+
+     .des-type {
+         font-size: 1rem;
+     }
+
+     .des-type::before {
+         width: 30px;
+     }
+
+     .des-description-area {
+         width: 70%;
+     }
+
+     .des-data-area {
+         justify-content: flex-end;
+         text-align: left;
+         height: 25vh;
+         padding-left: 25px;
+     }
+
+     .gallery {
+    width: 100%;
+ }
+
+ .gallery-title {
+     font-size: 2rem;
+ }
+
+ .gallery-description {
+     font-size: 1rem;
+ }
+.gallery-images {
+    column-count: 2;
+    padding-right: 5px;
+    width: 90%;
+}
+
+.gallery-images img {
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+ }

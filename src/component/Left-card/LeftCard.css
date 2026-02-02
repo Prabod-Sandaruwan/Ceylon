@@ -1,0 +1,52 @@
+.about-card-left {
+    box-sizing: content-box;
+    display: flex;
+    gap: 40px;
+    padding: 40px 10%;
+
+}
+
+.about-card-left img {
+    border-radius: 35px;
+    border: 2px solid #088395;
+    height: 300px;
+    width: 40%;
+    object-fit: cover;
+    margin-right: 10%;
+    opacity: 80%;
+}
+
+.about-card-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-card-description {
+    font-size: 17px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .about-card-left {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 2%;
+    }
+
+    .about-card-left img {
+        border-radius: 20px;
+        height: 200px;
+        width: 100%;
+    }
+
+    .about-card-title {
+        font-size: 1.3rem;
+    }
+
+    .about-card-description {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+}
