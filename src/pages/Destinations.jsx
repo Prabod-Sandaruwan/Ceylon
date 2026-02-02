@@ -88,11 +88,11 @@ function Destinations() {
         </div>
         <div className="des-button-area">
           <button className="next" onClick={prevImage}>
-            <span>NEXT</span>
+            <span>PREVIOUS</span>
             <span className="icon"><ChevronRight size={20} /></span>
           </button>
           <button className="previous" onClick={nextImage}>
-            <span>PREVIOUS</span>
+            <span>NEXT</span>
             <span className="icon"><ChevronLeft size={20} /></span>
           </button>
         </div>
